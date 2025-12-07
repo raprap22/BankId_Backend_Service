@@ -5,7 +5,6 @@ export class DepositoController {
   static async add(req: Request, res: Response) {
     try {
       const { name, yearly_return } = req.body;
-console.log(req.body);
 
       if (isNaN(yearly_return)) {
         return res.status(400).json({ message: 'yearly_return must be numeric 1' });

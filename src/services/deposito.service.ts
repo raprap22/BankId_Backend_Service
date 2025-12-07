@@ -17,8 +17,6 @@ export class DepositoService {
       yearly_return,
     });
 
-    console.log('newDeposito', newDeposito);
-
     return newDeposito;
   }
 
